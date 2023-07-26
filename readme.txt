@@ -1,49 +1,47 @@
 === Block Library ===
-Contributors:      Roberto Di Marco
-Tags:              gutenberg, blocks, custom blocks
-Tested up to:      6.1
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Contributors: Roberto Di Marco
+Tags: gutenberg, blocks, custom blocks
+Tested up to: 6.1
+Stable tag: 1.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-
-Un plugin WordPress che fornisce una serie di blocchi personalizzati per l'editor Gutenberg.
+A WordPress plugin that provides an efficient system for developers to create and manage custom blocks and patterns for the Gutenberg editor.
 
 == Description ==
 
-Il plugin Block Library è stato sviluppato con l'obiettivo di fornire una serie di blocchi personalizzati per l'editor Gutenberg di WordPress. Questi blocchi consentono di creare layout di pagine personalizzate e complesse.
+The Block Library plugin is designed to consolidate the development of custom blocks and patterns into one single plugin. This makes it easier for developers to create complex and unique page layouts in the Gutenberg editor.
 
-Le caratteristiche principali includono:
+Key features include:
 
-1. Una biblioteca di blocchi personalizzati che rispondono a una varietà di necessità di design e funzionalità.
-2. Una categoria di blocchi personalizzata, chiamata 'Block Library', per organizzare i blocchi personalizzati all'interno dell'editor Gutenberg.
-3. Uno script bash per automatizzare la creazione di nuovi blocchi personalizzati.
-4. Uno script bash per automatizzare la rimozione di blocchi personalizzati.
-5. Uno script bash per automatizzare la creazione di nuovi pattern personalizzati.
-6. Uno script bash per automatizzare la rimozione di pattern personalizzati.
-
+A library of custom blocks addressing a variety of design and functionality needs.
+A custom block category, 'Block Library', for organizing custom blocks within the Gutenberg editor.
+A bash script for automating the creation of new custom blocks.
+A bash script for automating the removal of custom blocks.
+A bash script for automating the creation of new custom patterns.
+A bash script for automating the removal of custom patterns.
 == Installation ==
 
-1. Assicurati di avere Node.js e npm installati sulla tua macchina.
-2. Esegui `npm install` nella directory principale del plugin per installare tutte le dipendenze del progetto.
-3. Rendi eseguibile lo script di generazione del blocco eseguendo `chmod +x create-block.sh` nella directory principale del plugin.
-3. Rendi eseguibile lo script di generazione del blocco eseguendo `chmod +x remove-block.sh` nella directory principale del plugin.
-4. Rendi eseguibile lo script di generazione del blocco eseguendo `chmod +x create-pattern.sh` nella directory principale del plugin.
-5. Rendi eseguibile lo script di generazione del blocco eseguendo `chmod +x remove-pattern.sh` nella directory principale del plugin.
-
+Ensure you have Node.js and npm installed on your machine.
+Run npm install in the main directory of the plugin to install all project dependencies.
+Make the block creation script executable by running chmod +x create-block.sh in the main directory of the plugin.
+Make the block removal script executable by running chmod +x remove-block.sh in the main directory of the plugin.
+Make the pattern creation script executable by running chmod +x create-pattern.sh in the main directory of the plugin.
+Make the pattern removal script executable by running chmod +x remove-pattern.sh in the main directory of the plugin.
 == Usage ==
 
-Il comando `npm run build` può essere utilizzato per eseguire una build globale dei blocchi, o il comando `npm run build:"block-name"` può essere utilizzato per eseguire una build per un singolo blocco.
+The npm run build command can be used to perform a global build of the blocks, or the npm run build:<block-name> command can be used to perform a build for a single block.
 
-Per creare un nuovo blocco, esegui `./create-block.sh "<block-name>"` sostituendo `<block-name>` con il nome del nuovo blocco che vuoi creare.
+To create a new block, run ./create-block.sh "<block-name>" replacing <block-name> with the name of the new block you want to create.
 
-Per rimuovere un blocco, esegui `./remove-block.sh "<block-name>"` sostituendo `<block-name>` con il nome del blocco che vuoi rimuovere.
+To remove a block, run ./remove-block.sh "<block-name>" replacing <block-name> with the name of the block you want to remove.
 
-Per creare un nuovo pattern, esegui `./create-pattern.sh "<pattern-name>"` sostituendo `<pattern-name>` con il nome del nuovo pattern che vuoi creare.
+To create a new pattern, run ./create-pattern.sh "<pattern-name>" replacing <pattern-name> with the name of the new pattern you want to create.
 
-Per rimuovere un pattern, esegui `./remove-pattern.sh "<pattern-name>"` sostituendo `<pattern-name>` con il nome del pattern che vuoi rimuovere.
+To remove a pattern, run ./remove-pattern.sh "<pattern-name>" replacing <pattern-name> with the name of the pattern you want to remove.
 
 == Changelog ==
 
 = 1.0.0 =
-* Release iniziale.
+
+Initial release.

@@ -2,10 +2,10 @@
 
 /**
  * Plugin Name:       Block Library
- * Description:       Un plugin WordPress che fornisce una serie di blocchi personalizzati per l'editor Gutenberg.
+ * Description:       A powerful tool for WordPress developers that enhances the Gutenberg editor by enabling the efficient creation and management of custom blocks and patterns.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           1.0.0
  * Author:            Roberto Di Marco
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -70,7 +70,7 @@ function create_block_block_library_options_page_html()
             <p>
                 <label>
                     <input type="checkbox" id="select-all">
-                    Seleziona/Deseleziona tutti
+                    <?php _e('Select All / Deselect All', 'block-library'); ?>
                 </label>
             </p>
             <?php

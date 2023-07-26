@@ -14,13 +14,7 @@
     "plugin-zip": "wp-scripts plugin-zip",
     "build": "npm run build:blocks",
     "start": "npm run start:blocks",
-    "build:blocks": "find blocks -name 'src' -execdir npx @wordpress/scripts build './src/index.js' --output-path='./build' \\; && find blocks -name 'src' -execdir node ../../copy-json.js $(basename $(pwd)) \\;",
-    "start:test1": "wp-scripts start blocks/test1/src/index.js --output-path=blocks/test1/build/ && cd blocks/test1 && node ../../copy-json.js test1",
-    "build:test1": "wp-scripts build blocks/test1/src/index.js --output-path=blocks/test1/build/ && cd blocks/test1 && node ../../copy-json.js test1",
-    "start:test2": "wp-scripts start blocks/test2/src/index.js --output-path=blocks/test2/build/ && cd blocks/test2 && node ../../copy-json.js test2",
-    "build:test2": "wp-scripts build blocks/test2/src/index.js --output-path=blocks/test2/build/ && cd blocks/test2 && node ../../copy-json.js test2",
-    "start:test3": "wp-scripts start blocks/test3/src/index.js --output-path=blocks/test3/build/ && cd blocks/test3 && node ../../copy-json.js test3",
-    "build:test3": "wp-scripts build blocks/test3/src/index.js --output-path=blocks/test3/build/ && cd blocks/test3 && node ../../copy-json.js test3"
+    "build:blocks": "find blocks -name 'src' -execdir npx @wordpress/scripts build './src/index.js' --output-path='./build' \\; && find blocks -name 'src' -execdir node ../../copy-json.js $(basename $(pwd)) \\;"
   },
   "devDependencies": {
     "@wordpress/scripts": "^26.8.0"

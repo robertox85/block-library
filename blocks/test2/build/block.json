@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "block-library/test2",
+    "version": "0.1.0",
+    "title": "test2",
+    "category": "block-library",
+    "description": "test2 block.",
+    "textdomain": "block-library",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}
+

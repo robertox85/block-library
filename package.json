@@ -17,6 +17,6 @@
     "build:blocks": "find blocks -name 'src' -execdir npx @wordpress/scripts build './src/index.js' --output-path='./build' \\; && find blocks -name 'src' -execdir node ../../copy-json.js $(basename $(pwd)) \\;"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^26.8.0"
+    "@wordpress/scripts": "^26.19.0"
   }
 }
